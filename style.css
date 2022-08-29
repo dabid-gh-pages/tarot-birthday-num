@@ -298,6 +298,8 @@ header i {
   background: #fff;
   border-radius: 7px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transition: opacity 1.6s ease-in-out;
 }
 
 .row-wrap {
@@ -310,7 +312,9 @@ header i {
   justify-content: center;
   flex-basis: 100%;
 }
-
+.show {
+  opacity: 1;
+}
 .footer {
   grid-area: footer;
   display: flex;

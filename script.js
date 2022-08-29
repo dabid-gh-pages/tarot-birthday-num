@@ -36,6 +36,12 @@ searchBtn.addEventListener("click", () => {
     ); //
     console.log(globalObject);
 
+    // toggle on
+    document.querySelector("section.overview-area").classList.toggle("show");
+    document
+      .querySelector("section.yearly-overview-chart")
+      .classList.toggle("show");
+
     // 혼의수/선천수/후천수/종합수
     createSummarySection(
       globalObject,
