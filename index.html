@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>타로 생일수 계산기</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking BoxIcon for Icon -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="script.js" defer></script>
+    <script src="globalObject.js" defer></script>
+    <script src="summary-section.js" defer></script>
+    <script src="yearly-chart.js" defer></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="height:50px; width:100%; clear:both;"></div>
+    <div class="wrapper">
+      <header>
+        <i class="bx bx-left-arrow-alt"></i>타로 생일수
+      </header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="break"></div>
+        <input
+          class="big hs-code"
+          type="text"
+          spellcheck="false"
+          placeholder="생년월일 (음력, 8자리)"
+          required
+          pattern="\d{8}"
+        />
+        <div class="break"></div>
+        <input
+          class="small start-date"
+          type="text"
+          spellcheck="false"
+          placeholder="시작연도(2020)"
+          required
+          pattern="\d{4}"
+        />
+        <input
+          class="small end-date"
+          type="text"
+          spellcheck="false"
+          placeholder="종료연도(2020)"
+          required
+          pattern="\d{4}"
+        />
+
+        <div class="break"></div>
+
+        <button>생일수 분석</button>
+      </div>
+
+    <div class="grid-container">
+
+
+
+      <main class="main">
+
+
+        <div class="main-cards">
+          <section class="card row-wrap overview-area"> </section>
+          <section class="card yearly-overview-chart"> </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__copyright">&copy; 2022 Dabid</div>
+        <div class="footer__signature"></div>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
