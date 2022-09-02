@@ -452,10 +452,10 @@ const getGlobalObject = function (solarDateinyyyymmdd, startYear, endYear) {
     const lunarDay = lunarDate.getDate();
 
     // 상반기 수 : 해당연도 + 음력 생일 중 월 / 일
-    let firstHalfNum = sumDigits(targetYear + lunarMonth + lunarDay);
+    let firstHalfNum = sumDigitsUntil(targetYear + lunarMonth + lunarDay,22);
 
     // 하반기 수 : 해당연도 + 음력 생일 중 월 / 일
-    let secondHalfNum = sumDigits(targetYear + solarMonth + solarDay);
+    let secondHalfNum = sumDigitsUntil(targetYear + solarMonth + solarDay,22);
 
     // 총운 수
     let totalNum = sumDigitsUntil(firstHalfNum + secondHalfNum, 9);
