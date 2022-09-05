@@ -1,7 +1,8 @@
 // summary of 혼의수,선천수,후천수
 
 function loadYearlyChart(globalObject, chartElement) {
-  const chartTitle = `${globalObject.startYear}년 ~ ${globalObject.endYear}년 연도운`;
+  // const chartTitle = `${globalObject.startYear}년 ~ ${globalObject.endYear}년 연도운`;
+  const chartTitle = `연도운 추이`;
 
   const dates = globalObject.yearlyNums.map(
     (yearObject) => yearObject.targetYear
@@ -59,7 +60,7 @@ function loadYearlyChart(globalObject, chartElement) {
       // dashArray: 0,
     },
     dataLabels: {
-      enabled: true,
+      enabled: false,
     },
 
     series: series,
