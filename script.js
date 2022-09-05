@@ -62,7 +62,7 @@ searchBtn.addEventListener("click", () => {
 function handleCredentialResponse(response) {
   console.log("Encoded JWT ID token: " + response.credential);
   const responsePayload = parseJwt(response.credential);
-  console.log(parseJwt);
+  console.log(responsePayload);
 
   console.log("ID: " + responsePayload.sub);
   console.log("Full Name: " + responsePayload.name);
